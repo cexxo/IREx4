@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+379f96f805d3a6c0de8f9575c42c2689 /home/cexxo39/excercise4_ws/devel/.private/my_package/share/roseus/ros/my_package/manifest.l
+584995c9f2a4eef042c8b00b29ba5743 CMakeFiles/clean_test_results
+2660c3f5514d19cefda4e0c2d8e966bf CMakeFiles/my_package_generate_messages_eus
