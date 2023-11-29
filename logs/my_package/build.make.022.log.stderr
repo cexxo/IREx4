@@ -1,0 +1,14 @@
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid kMeansClustering(std::vector<std::vector<float> >, std::vector<float>&, int, int)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:7:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvecor[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kvector[m[K’?
+    7 |   std::[01;31m[Kvecor[m[K<int> visited;
+      |        [01;31m[K^~~~~[m[K
+      |        [32m[Kvector[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:7:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+    7 |   std::vecor<[01;31m[Kint[m[K> visited;
+      |              [01;31m[K^~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:10:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisited[m[K’ was not declared in this scope
+   10 |    for(int j = 0; j< [01;31m[Kvisited[m[K.size();j++){
+      |                      [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

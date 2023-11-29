@@ -1,0 +1,24 @@
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[ 33%] Built target my_package_generate_messages_py
+[ 33%] Built target my_package_generate_messages_nodejs
+[ 33%] Built target my_package_generate_messages_eus
+[ 33%] Built target my_package_generate_messages_cpp
+[ 33%] Built target my_package_generate_messages_lisp
+[35m[1mScanning dependencies of target laserScanner[0m
+[ 33%] Built target my_package_generate_messages
+[ 66%] [32mBuilding CXX object CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o[0m
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid clustering(std::vector<std::vector<float> >, std::vector<std::vector<float> >&, int, int)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:41:15:[m[K [01;31m[Kerror: [m[Kassignment of read-only variable ‘[01m[Ktollerance[m[K’
+   41 |    [01;31m[Ktollerance -=0.01[m[K;
+      |    [01;31m[K~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:43:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kloopcounter[m[K’ was not declared in this scope; did you mean ‘[01m[KloopCounter[m[K’?
+   43 |   if([01;31m[Kloopcounter[m[K > maxIter)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+      |      [32m[KloopCounter[m[K
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

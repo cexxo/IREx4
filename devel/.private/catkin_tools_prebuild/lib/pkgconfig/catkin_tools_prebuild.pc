@@ -1,4 +1,4 @@
-prefix=/home/cexxo39/excercise4_ws/devel/.private/catkin_tools_prebuild
+prefix=/home/cexxo/excercise4_ws/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

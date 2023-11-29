@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cexxo39/excercise4_ws/src/my_package
+CMAKE_SOURCE_DIR = /home/cexxo/excercise4_ws/src/my_package
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cexxo39/excercise4_ws/build/my_package
+CMAKE_BINARY_DIR = /home/cexxo/excercise4_ws/build/my_package
 
 # Utility rule file for my_package_generate_messages.
 
@@ -67,6 +67,6 @@ CMakeFiles/my_package_generate_messages.dir/clean:
 .PHONY : CMakeFiles/my_package_generate_messages.dir/clean
 
 CMakeFiles/my_package_generate_messages.dir/depend:
-	cd /home/cexxo39/excercise4_ws/build/my_package && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cexxo39/excercise4_ws/src/my_package /home/cexxo39/excercise4_ws/src/my_package /home/cexxo39/excercise4_ws/build/my_package /home/cexxo39/excercise4_ws/build/my_package /home/cexxo39/excercise4_ws/build/my_package/CMakeFiles/my_package_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cexxo/excercise4_ws/build/my_package && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cexxo/excercise4_ws/src/my_package /home/cexxo/excercise4_ws/src/my_package /home/cexxo/excercise4_ws/build/my_package /home/cexxo/excercise4_ws/build/my_package /home/cexxo/excercise4_ws/build/my_package/CMakeFiles/my_package_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_package_generate_messages.dir/depend
 

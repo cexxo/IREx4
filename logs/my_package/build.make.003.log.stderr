@@ -1,21 +1,8 @@
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:4:37:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScanner[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type; did you mean ‘[01m[KLaserScanPtr[m[K’?
-    4 | void msgCallback(const sensor_msgs::[01;31m[KLaserScanner[m[K::ConstPtr& ls){
-      |                                     [01;31m[K^~~~~~~~~~~~[m[K
-      |                                     [32m[KLaserScanPtr[m[K
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:4:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
-    4 | void msgCallback(const sensor_msgs::LaserScanner::ConstPtr[01;31m[K&[m[K ls){
-      |                                                           [01;31m[K^[m[K
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:4:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
-    4 | void msgCallback[34m[K([m[Kconst sensor_msgs::LaserScanner::ConstPtr[01;31m[K&[m[K ls){
-      |                 [34m[K~[m[K                                         [01;31m[K^[m[K
-      |                                                           [32m[K)[m[K
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:4:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kls[m[K’
-    4 | void msgCallback(const sensor_msgs::LaserScanner::ConstPtr& [01;31m[Kls[m[K){
-      |                                                             [01;31m[K^~[m[K
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:11:50:[m[K [01;31m[Kerror: [m[K‘[01m[KmsgCallback[m[K’ was not declared in this scope
-   11 |  ros::Subscriber sub = n.subscribe("/scan",1000, [01;31m[KmsgCallback[m[K);
-      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid msgCallback(const LaserScanPtr&)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:10:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kinf[m[K’ was not declared in this scope; did you mean ‘[01m[Kynf[m[K’?
+   10 |   if(ls->ranges[i] != 0 && ls->ranges[i] != [01;31m[Kinf[m[K)
+      |                                             [01;31m[K^~~[m[K
+      |                                             [32m[Kynf[m[K
 make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
 make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
 make: *** [Makefile:141: all] Error 2

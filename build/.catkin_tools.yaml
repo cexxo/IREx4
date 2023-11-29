@@ -1,6 +1,6 @@
-devel_space: /home/cexxo39/excercise4_ws/devel
+devel_space: /home/cexxo/excercise4_ws/devel
 install: false
-install_space: /home/cexxo39/excercise4_ws/install
+install_space: /home/cexxo/excercise4_ws/install
 profile: default
-source_space: /home/cexxo39/excercise4_ws/src
-workspace: /home/cexxo39/excercise4_ws
+source_space: /home/cexxo/excercise4_ws/src
+workspace: /home/cexxo/excercise4_ws

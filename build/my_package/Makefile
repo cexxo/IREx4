@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cexxo39/excercise4_ws/src/my_package
+CMAKE_SOURCE_DIR = /home/cexxo/excercise4_ws/src/my_package
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cexxo39/excercise4_ws/build/my_package
+CMAKE_BINARY_DIR = /home/cexxo/excercise4_ws/build/my_package
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cexxo39/excercise4_ws/build/my_package/CMakeFiles /home/cexxo39/excercise4_ws/build/my_package/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cexxo/excercise4_ws/build/my_package/CMakeFiles /home/cexxo/excercise4_ws/build/my_package/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cexxo39/excercise4_ws/build/my_package/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cexxo/excercise4_ws/build/my_package/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

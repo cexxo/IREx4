@@ -1,4 +1,4 @@
-prefix=/home/cexxo39/excercise4_ws/devel/.private/my_package
+prefix=/home/cexxo/excercise4_ws/devel/.private/my_package
 
 Name: my_package
 Description: Description of my_package

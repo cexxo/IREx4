@@ -1,0 +1,7 @@
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid msgCallback(const LaserScanPtr&)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:42:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+   42 |  [01;31m[Kfor[m[K(int i = 0; i<centers.size();i++)
+      |  [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

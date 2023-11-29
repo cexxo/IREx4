@@ -1,7 +1,0 @@
-[31m[1mCMake Error[0m at /home/cexxo39/excercise4_ws/src/my_package/CMakeLists.txt:210 (add_dependencies):
-  The dependency target "my_package_generate_messages_cpp" of target
-  "laserScanner" does not exist.
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
-make: *** [Makefile:684: cmake_check_build_system] Error 1

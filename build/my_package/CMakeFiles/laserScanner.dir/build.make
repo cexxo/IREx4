@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cexxo39/excercise4_ws/src/my_package
+CMAKE_SOURCE_DIR = /home/cexxo/excercise4_ws/src/my_package
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cexxo39/excercise4_ws/build/my_package
+CMAKE_BINARY_DIR = /home/cexxo/excercise4_ws/build/my_package
 
 # Include any dependencies generated for this target.
 include CMakeFiles/laserScanner.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/laserScanner.dir/progress.make
 include CMakeFiles/laserScanner.dir/flags.make
 
 CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o: CMakeFiles/laserScanner.dir/flags.make
-CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o: /home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cexxo39/excercise4_ws/build/my_package/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o -c /home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp
+CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o: /home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cexxo/excercise4_ws/build/my_package/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o -c /home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp
 
 CMakeFiles/laserScanner.dir/src/laserScanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/laserScanner.dir/src/laserScanner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp > CMakeFiles/laserScanner.dir/src/laserScanner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp > CMakeFiles/laserScanner.dir/src/laserScanner.cpp.i
 
 CMakeFiles/laserScanner.dir/src/laserScanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/laserScanner.dir/src/laserScanner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp -o CMakeFiles/laserScanner.dir/src/laserScanner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp -o CMakeFiles/laserScanner.dir/src/laserScanner.cpp.s
 
 # Object files for target laserScanner
 laserScanner_OBJECTS = \
@@ -77,32 +77,32 @@ laserScanner_OBJECTS = \
 # External object files for target laserScanner
 laserScanner_EXTERNAL_OBJECTS =
 
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/build.make
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libactionlib.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libroscpp.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librostime.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libcpp_common.so
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cexxo39/excercise4_ws/build/my_package/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner"
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/build.make
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libactionlib.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libroscpp.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/librostime.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /opt/ros/noetic/lib/libcpp_common.so
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner: CMakeFiles/laserScanner.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cexxo/excercise4_ws/build/my_package/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/laserScanner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/laserScanner.dir/build: /home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner
+CMakeFiles/laserScanner.dir/build: /home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner
 
 .PHONY : CMakeFiles/laserScanner.dir/build
 
@@ -111,6 +111,6 @@ CMakeFiles/laserScanner.dir/clean:
 .PHONY : CMakeFiles/laserScanner.dir/clean
 
 CMakeFiles/laserScanner.dir/depend:
-	cd /home/cexxo39/excercise4_ws/build/my_package && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cexxo39/excercise4_ws/src/my_package /home/cexxo39/excercise4_ws/src/my_package /home/cexxo39/excercise4_ws/build/my_package /home/cexxo39/excercise4_ws/build/my_package /home/cexxo39/excercise4_ws/build/my_package/CMakeFiles/laserScanner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cexxo/excercise4_ws/build/my_package && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cexxo/excercise4_ws/src/my_package /home/cexxo/excercise4_ws/src/my_package /home/cexxo/excercise4_ws/build/my_package /home/cexxo/excercise4_ws/build/my_package /home/cexxo/excercise4_ws/build/my_package/CMakeFiles/laserScanner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/laserScanner.dir/depend
 

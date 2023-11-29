@@ -1,7 +1,6 @@
-[01m[K/home/cexxo39/excercise4_ws/src/my_package/src/laserScanner.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/LaserScanner.h: No such file or directory
-    2 | #include [01;31m[K"sensor_msgs/LaserScanner.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid msgCallback(const LaserScanPtr&)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:10:42:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kconst char [4][m[K’ to binary ‘[01m[Koperator!=[m[K’
+   10 |   if(ls->ranges[i] != 0 && ls->ranges[i] != "inf")
 make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
 make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
 make: *** [Makefile:141: all] Error 2

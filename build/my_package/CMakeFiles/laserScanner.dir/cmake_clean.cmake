@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner"
-  "/home/cexxo39/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner.pdb"
+  "/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner"
+  "/home/cexxo/excercise4_ws/devel/.private/my_package/lib/my_package/laserScanner.pdb"
   "CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o"
 )
 
