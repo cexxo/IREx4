@@ -1,13 +1,13 @@
-[  0%] Built target actionlib_msgs_generate_messages_cpp
-[  0%] Built target actionlib_msgs_generate_messages_py
 [  0%] Built target actionlib_msgs_generate_messages_lisp
 [  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_cpp
 [  0%] Built target actionlib_msgs_generate_messages_eus
-[  0%] Built target my_package_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
 [  0%] Built target my_package_generate_messages_lisp
-[  0%] Built target my_package_generate_messages_py
 [  0%] Built target my_package_generate_messages_nodejs
+[  0%] Built target my_package_generate_messages_cpp
 [ 33%] Built target my_package_generate_messages_eus
+[ 33%] Built target my_package_generate_messages_py
 [35m[1mScanning dependencies of target laserScanner[0m
 [ 66%] [32mBuilding CXX object CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o[0m
 [ 66%] Built target my_package_generate_messages

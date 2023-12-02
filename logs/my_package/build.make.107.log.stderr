@@ -1,0 +1,7 @@
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kstd::vector<std::vector<float> > getCenters(std::vector<std::vector<float> >, std::vector<int>)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:95:2:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kwhile[m[K’
+   95 |  [01;31m[Kwhile[m[K(currentLabel<maxLabel){
+      |  [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -79,6 +79,39 @@ void newClustering(std::vector<std::vector<float>>& points,std::vector<int>& lab
 	}
 }
 
+std::vector<std::vector<float>> getCenters(std::vector<std::vector<float>> points, std::vector<int> labels){
+	std::vector<std::vector<float>> centers;
+	int numElements = 0;
+	int currentLabel = 1;
+	int maxLabel = 1;
+	for(int i =0;i<labels.size();i++){
+		if(labels[i]>=maxLabel)
+			maxLabel=labels[i];
+	}
+	std::vector<float> temp_vector(2);
+	float temp_distance_x;
+	float temp_distance_y;
+	while(currentLabel-1<maxLabel){
+		for(int i=0;i<labels.size();i++){
+			if(labels[i]==currentLabel){
+				temp_distance_x += points[i][0];
+				temp_distance_y += points[i][1];
+				numElements++;
+			}
+		}
+		temp_distance_x /= numElements;
+		temp_distance_y /= numElements;
+		temp_vector[0]=temp_distance_x;
+		temp_vector[1]=temp_distance_y;
+		centers.push_back(temp_vector);
+		temp_distance_y = 0;
+		temp_distance_x = 0;
+		numElements = 0;
+		currentLabel++;
+	}
+	return centers;
+}
+
 void msgCallback(const sensor_msgs::LaserScanPtr& ls){
 	float range = (ls->angle_max - ls->angle_min)/ls->angle_increment;
 	std::vector<std::vector<float>> points;
@@ -103,18 +136,21 @@ void msgCallback(const sensor_msgs::LaserScanPtr& ls){
 	//clustering(points,centers,6,5,reversedPoints);
 	std::vector<int> newLabels(points.size());
 	newClustering(points,newLabels,100);
+	std::vector<std::vector<float>> finalPoints = getCenters(points,newLabels);
 	//ROS_INFO("AFTER CLUSTERING");
 	//for(int i=0; i<points.size();i++)
 		//ROS_INFO("point %d is %f,%f",labels[i],points[i][0],points[i][1]);
-	for(int i = 0; i<newLabels.size();i++)
-		ROS_INFO("The point %d [%f,%f] has label %d",i,points[i][0],points[i][1],newLabels[i]);
+	//for(int i = 0; i<newLabels.size();i++)
+		//ROS_INFO("The point %d [%f,%f] has label %d",i,points[i][0],points[i][1],newLabels[i]);
+	for(int i=0;i<finalPoints.size();i++)
+		ROS_INFO("The person %d is in position [%f,%f]",i+1,finalPoints[i][0],finalPoints[i][1]);
 		//ROS_INFO("Center %d-th: [%f,%f]",i,centers[i][0],centers[i][1]);
 	//TODO:
 	//Clustering from the centers we have found so far
 	//Merge the two closest clusters in order to detect the person
 	//Find the centroids of the new clusters in order to determine as precise as possible the new person's position
 	//Check if it works for the whole bag
-	ros::shutdown();//Just cause i don't want to have a spam of points for now...
+	//ros::shutdown();//Just cause i don't want to have a spam of points for now...
 }
 
 int main(int argc, char **argv){
