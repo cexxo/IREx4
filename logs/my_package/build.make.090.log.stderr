@@ -1,0 +1,69 @@
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:5:121:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vecctor[m[K’ has not been declared
+    5 | void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<float>>& centers,int k,int maxIter,std::[01;31m[Kvecctor[m[K<std::vector<float>>& reversePoints){
+      |                                                                                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:5:128:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+    5 | void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<float>>& centers,int k,int maxIter,std::vecctor[01;31m[K<[m[Kstd::vector<float>>& reversePoints){
+      |                                                                                                                                [01;31m[K^[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid newClustering(std::vector<std::vector<float> >&, std::vector<int>&, int)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:55:10:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kcenters[m[K’, which is of non-class type ‘[01m[Kstd::vector<std::vector<float> >()[m[K’
+   55 |  centers.[01;31m[Kpush_back[m[K(points[0]);
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:53:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   59 |     distance += (points[i][0]-centers[currentLabel-1[01;35m[K][m[K[0])*(points[i][0]-centers[currentLabel-1][0]);
+      |                                                     [01;35m[K^[m[K
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:56:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   59 |     distance += (points[i][0]-centers[currentLabel-1][0[01;35m[K][m[K)*(points[i][0]-centers[currentLabel-1][0]);
+      |                                                        [01;35m[K^[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:30:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kstd::vector<std::vector<float> >()[m[K’ to binary ‘[01m[Koperator-[m[K’
+   59 |     distance += (points[i][0]-centers[currentLabel-1][0])*(points[i][0]-centers[currentLabel-1][0]);
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:95:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   59 |     distance += (points[i][0]-centers[currentLabel-1][0])*(points[i][0]-centers[currentLabel-1[01;35m[K][m[K[0]);
+      |                                                                                               [01;35m[K^[m[K
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:98:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   59 |     distance += (points[i][0]-centers[currentLabel-1][0])*(points[i][0]-centers[currentLabel-1][0[01;35m[K][m[K);
+      |                                                                                                  [01;35m[K^[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:59:72:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kstd::vector<std::vector<float> >()[m[K’ to binary ‘[01m[Koperator-[m[K’
+   59 |     distance += (points[i][0]-centers[currentLabel-1][0])*(points[i][0]-centers[currentLabel-1][0]);
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:53:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   60 |     distance += (points[i][1]-centers[currentLabel-1[01;35m[K][m[K[1])*(points[i][1]-centers[currentLabel-1][1]);
+      |                                                     [01;35m[K^[m[K
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:56:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   60 |     distance += (points[i][1]-centers[currentLabel-1][1[01;35m[K][m[K)*(points[i][1]-centers[currentLabel-1][1]);
+      |                                                        [01;35m[K^[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:30:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kstd::vector<std::vector<float> >()[m[K’ to binary ‘[01m[Koperator-[m[K’
+   60 |     distance += (points[i][1]-centers[currentLabel-1][1])*(points[i][1]-centers[currentLabel-1][1]);
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:95:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   60 |     distance += (points[i][1]-centers[currentLabel-1][1])*(points[i][1]-centers[currentLabel-1[01;35m[K][m[K[1]);
+      |                                                                                               [01;35m[K^[m[K
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:98:[m[K [01;35m[Kwarning: [m[Kpointer to a function used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   60 |     distance += (points[i][1]-centers[currentLabel-1][1])*(points[i][1]-centers[currentLabel-1][1[01;35m[K][m[K);
+      |                                                                                                  [01;35m[K^[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:60:72:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kstd::vector<std::vector<float> >()[m[K’ to binary ‘[01m[Koperator-[m[K’
+   60 |     distance += (points[i][1]-centers[currentLabel-1][1])*(points[i][1]-centers[currentLabel-1][1]);
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:66:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klables[m[K’ was not declared in this scope; did you mean ‘[01m[Klabels[m[K’?
+   66 |   for(int i=0;i<[01;31m[Klables[m[K.size();i++){
+      |                 [01;31m[K^~~~~~[m[K
+      |                 [32m[Klabels[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:68:13:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kcenters[m[K’, which is of non-class type ‘[01m[Kstd::vector<std::vector<float> >()[m[K’
+   68 |     centers.[01;31m[Kpush_back[m[K(points[i]);
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid msgCallback(const LaserScanPtr&)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:18:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   97 |  std::vector<sstd[01;31m[K:[m[Kvector<float>> reversedPoints(points.size());
+      |                  [01;31m[K^[m[K
+      |                  [32m[K::[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksstd[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd[m[K’?
+   97 |  std::vector<[01;31m[Ksstd[m[K:vector<float>> reversedPoints(points.size());
+      |              [01;31m[K^~~~[m[K
+      |              [32m[Kstd[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   97 |  std::vector<sstd:vector<float[01;31m[K>>[m[K reversedPoints(points.size());
+      |                               [01;31m[K^~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

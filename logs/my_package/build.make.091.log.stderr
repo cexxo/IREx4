@@ -1,0 +1,25 @@
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid newClustering(std::vector<std::vector<float> >&, std::vector<int>&, int)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:66:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klables[m[K’ was not declared in this scope; did you mean ‘[01m[Klabels[m[K’?
+   66 |   for(int i=0;i<[01;31m[Klables[m[K.size();i++){
+      |                 [01;31m[K^~~~~~[m[K
+      |                 [32m[Klabels[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:[m[K In function ‘[01m[Kvoid msgCallback(const LaserScanPtr&)[m[K’:
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:18:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   97 |  std::vector<sstd[01;31m[K:[m[Kvector<float>> reversedPoints(points.size());
+      |                  [01;31m[K^[m[K
+      |                  [32m[K::[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksstd[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd[m[K’?
+   97 |  std::vector<[01;31m[Ksstd[m[K:vector<float>> reversedPoints(points.size());
+      |              [01;31m[K^~~~[m[K
+      |              [32m[Kstd[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   97 |  std::vector<sstd:vector<float[01;31m[K>>[m[K reversedPoints(points.size());
+      |                               [01;31m[K^~[m[K
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:97:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/cexxo/excercise4_ws/src/my_package/src/laserScanner.cpp:101:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustering[m[K’ was not declared in this scope; did you mean ‘[01m[KnewClustering[m[K’?
+  101 |  [01;31m[Kclustering[m[K(points,centers,6,5,reversedPoints);
+      |  [01;31m[K^~~~~~~~~~[m[K
+      |  [32m[KnewClustering[m[K
+make[2]: *** [CMakeFiles/laserScanner.dir/build.make:63: CMakeFiles/laserScanner.dir/src/laserScanner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:701: CMakeFiles/laserScanner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

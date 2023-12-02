@@ -2,13 +2,13 @@
 #include "sensor_msgs/LaserScan.h"
 #include <cmath>
 
-void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<float>>& centers,int k,int maxIter){
+/*void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<float>>& centers,int k,int maxIter,std::vector<std::vector<float>>& reversePoints){
 	float tollerance = 0.05;//Tollerance of the neighborhood we want to 'cluster'
 	int counter = 1;
 	bool allInRange = true;
 	int loopCounter = 0;
 	while(counter<k){
-		/*for(int i = 0; i< centers.size();i++){
+		for(int i = 0; i< centers.size();i++){
 			for(int j =1;j<points.size();j++){
 				if(points[j][0] <= centers[i][0]-tollerance && counter < k){
 					centers[counter] = points[j];
@@ -16,7 +16,7 @@ void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<
 					counter++;
 				}
 			}
-		}*/
+		}
 		for(int i = 1; i<points.size();i++){
 			//ROS_INFO("FIRST LOOP");
 			for(int j = 0; j< centers.size();j++){
@@ -43,7 +43,42 @@ void clustering(std::vector<std::vector<float>> points, std::vector<std::vector<
 		if(loopCounter > maxIter)
 			break;
 	}
+}*/
+
+void newClustering(std::vector<std::vector<float>>& points,std::vector<int>& labels,int maxCluster){
+	int currentIteration = 0;
+	const int radius = 1;
+	labels[0] = 1;
+	int currentLabel = 1;
+	float distance;
+	std::vector<std::vector<float>> centers;
+	centers.push_back(points[0]);
+	bool found = false;
+	while(currentLabel-1 < maxCluster){
+		for(int i=1;i<points.size();i++){
+			distance += (points[i][0]-centers[currentLabel-1][0])*(points[i][0]-centers[currentLabel-1][0]);
+			distance += (points[i][1]-centers[currentLabel-1][1])*(points[i][1]-centers[currentLabel-1][1]);
+			distance = sqrt(distance);
+			//ROS_INFO("Distance from center %d: [%f]",currentLabel,distance);
+			if(distance <= radius){
+				labels[i] = currentLabel;
+			}
+			distance=0;
+		}
+		for(int i=0;i<labels.size();i++){
+			if(labels[i]==0){
+				centers.push_back(points[i]);
+				currentLabel++;
+				found = true;
+				break;
+			}
+		}
+		if(!found)
+			break;
+		found=false;
+	}
 }
+
 void msgCallback(const sensor_msgs::LaserScanPtr& ls){
 	float range = (ls->angle_max - ls->angle_min)/ls->angle_increment;
 	std::vector<std::vector<float>> points;
@@ -61,15 +96,19 @@ void msgCallback(const sensor_msgs::LaserScanPtr& ls){
 			labels.push_back(i);
 		}
 	}
+	std::vector<std::vector<float>> reversedPoints(points.size());
 	for(int i =0; i<centers.size();i++)
 		centers[i] = points[0];
 	//ROS_INFO("BEFORE CLUSTERING");
-	clustering(points,centers,6,5);
+	//clustering(points,centers,6,5,reversedPoints);
+	std::vector<int> newLabels(points.size());
+	newClustering(points,newLabels,100);
 	//ROS_INFO("AFTER CLUSTERING");
 	//for(int i=0; i<points.size();i++)
 		//ROS_INFO("point %d is %f,%f",labels[i],points[i][0],points[i][1]);
-	for(int i = 0; i<centers.size();i++)
-		ROS_INFO("Center %d-th: [%f,%f]",i,centers[i][0],centers[i][1]);
+	for(int i = 0; i<newLabels.size();i++)
+		ROS_INFO("The point %d [%f,%f] has label %d",i,points[i][0],points[i][1],newLabels[i]);
+		//ROS_INFO("Center %d-th: [%f,%f]",i,centers[i][0],centers[i][1]);
 	//TODO:
 	//Clustering from the centers we have found so far
 	//Merge the two closest clusters in order to detect the person
