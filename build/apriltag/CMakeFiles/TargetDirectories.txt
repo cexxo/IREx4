@@ -1,0 +1,11 @@
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/install/local.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/install.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/list_install_components.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/rebuild_cache.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/edit_cache.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/apriltag_demo.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/install/strip.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/apriltag_python.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/opencv_demo.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/apriltag.cpython-38-x86_64-linux-gnu.so.dir
+/home/cexxo/excercise4_ws/build/apriltag/CMakeFiles/apriltag.dir

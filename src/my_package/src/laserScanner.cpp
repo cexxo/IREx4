@@ -70,12 +70,12 @@ std::vector<std::vector<float>> getCenters(std::vector<std::vector<float>> point
 																											//
 void msgCallback(const sensor_msgs::LaserScanPtr& ls){														//This is the messageCallback function
 	float range = (ls->angle_max - ls->angle_min)/ls->angle_increment;										//which is called in the subscriber.
-	std::vector<std::vector<float>> points;																	//We found the parameters we need and
-	std::vector<int> labels;																				//calculated the cartesian coordiantes
-	std::vector<std::vector<float>> centers;																//starting from the polar ones given by 
+	//std::vector<std::vector<float>> points;																	//We found the parameters we need and
+	//std::vector<int> labels;																				//calculated the cartesian coordiantes
+	//std::vector<std::vector<float>> centers;																//starting from the polar ones given by 
 	//ROS_INFO("min: %f; max: %f; increment: %f", ls->angle_min,ls->angle_max,ls->angle_increment);			//the bag file.
 	//ROS_INFO("range max: %f; range min: %f",ls->range_max,ls->range_min);									//
-	for(int i = 0; i < range;i++){																			//We decided to discard all the points 
+	/*for(int i = 0; i < range;i++){																			//We decided to discard all the points 
 		if(ls->ranges[i] != 0 && ls->ranges[i] <=ls->range_max ){											//that where zero or more than the maximum
 			std::vector<float> temp_points(2);																//range in order to simplify the 
 			temp_points[0]=ls->ranges[i]*cos(i*ls->angle_increment);										//computation.
@@ -92,13 +92,15 @@ void msgCallback(const sensor_msgs::LaserScanPtr& ls){														//This is th
 	//for(int i = 0; i<newLabels.size();i++)																//get the centers and print the position 
 		//ROS_INFO("The point %d [%f,%f] has label %d",i,points[i][0],points[i][1],newLabels[i]);			//of the people.
 	for(int i=0;i<finalPoints.size();i++)																	//
-		ROS_INFO("The person %d is in position [%f,%f]",i+1,finalPoints[i][0],finalPoints[i][1]);			//
+		ROS_INFO("The person %d is in position [%f,%f]",i+1,finalPoints[i][0],finalPoints[i][1]);*/			//
+	for(int i=0; i<range;i++)
+		ROS_INFO("point %f",ls->ranges[i]);
 }																											//
 																											//
 int main(int argc, char **argv){																			//
 	ros::init(argc,argv, "laser_scanner");																	//
 	ros::NodeHandle n;																						//We subscribe to the /scan topic in order
-	ros::Subscriber sub = n.subscribe("/scan",1000,msgCallback);											//to get the data we need.
+	ros::Subscriber sub = n.subscribe("/scan_raw",1000,msgCallback);											//to get the data we need.
 	ros::spin();																							//
 	return 0;																								//
 }																											//

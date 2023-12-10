@@ -1,0 +1,8 @@
+prefix=/home/cexxo/excercise4_ws/devel/.private/exercise_4_1
+
+Name: exercise_4_1
+Description: Description of exercise_4_1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

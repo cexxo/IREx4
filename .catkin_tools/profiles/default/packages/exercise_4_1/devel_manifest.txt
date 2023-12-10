@@ -1,0 +1,5 @@
+IntelligentRobotics2223/exercise_4_1
+/home/cexxo/excercise4_ws/devel/.private/exercise_4_1/cmake.lock /home/cexxo/excercise4_ws/devel/./cmake.lock
+/home/cexxo/excercise4_ws/devel/.private/exercise_4_1/lib/pkgconfig/exercise_4_1.pc /home/cexxo/excercise4_ws/devel/lib/pkgconfig/exercise_4_1.pc
+/home/cexxo/excercise4_ws/devel/.private/exercise_4_1/share/exercise_4_1/cmake/exercise_4_1Config.cmake /home/cexxo/excercise4_ws/devel/share/exercise_4_1/cmake/exercise_4_1Config.cmake
+/home/cexxo/excercise4_ws/devel/.private/exercise_4_1/share/exercise_4_1/cmake/exercise_4_1Config-version.cmake /home/cexxo/excercise4_ws/devel/share/exercise_4_1/cmake/exercise_4_1Config-version.cmake
